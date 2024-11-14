@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title> Pet Roomies </title> 
+        <link href="css/estilos.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    </head>
+    <body>
+         <header>
+             <div id="logo">
+                <a href="index.html"> <img src="Imagenes/logopetroomies.png" alt="Logo de pet roomies" /></a>
+            </div>
+        </header>
+        
+        <nav>
+            <h1>Menú</h1>
+            
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registrate.html">Registrate</a></li>
+                <li><a href="como_funciona.html">¿Cómo funciona?</a></li>
+                <li><a href="quienes_somos.html">¿Quienes somos?</a></li>
+                <li><a href="confianzayseguridad.html">Confianza y seguridad</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="ayuda.html">Ayuda</a></li>
+            </ul>
+        </nav>
+       
+        <main>
+        
+            <div class="container" id="auth-container">
+                <h1>Pet Roomies</h1>
+                <div class="form-container">
+                    <div class="form-section" id="login-section">
+                        <h2>Inicio de Sesión</h2>
+                        <form id="login-form">
+                            <label for="login-email">Correo Electrónico:</label>
+                            <input type="email" id="login-email" required>
+                            
+                            <label for="login-password">Contraseña:</label>
+                            <input type="password" id="login-password" required>
+                            
+                            <button type="submit">Iniciar Sesión</button>
+                        </form>
+                        <p>¿No tienes una cuenta? <a href="#" id="show-register">Regístrate aquí</a></p>
+                    </div>
+        
+                    <div class="form-section" id="register-section" style="display:none;">
+                        <h2>Registro</h2>
+                        <form id="register-form">
+                            <label for="register-name">Nombre:</label>
+                            <input type="text" id="register-name" required>
+                            
+                            <label for="register-email">Correo Electrónico:</label>
+                            <input type="email" id="register-email" required>
+                            
+                            <label for="register-password">Contraseña:</label>
+                            <input type="password" id="register-password" required>
+                            
+                            <button type="submit">Registrar</button>
+                        </form>
+                        <p>¿Ya tienes una cuenta? <a href="#" id="show-login">Inicia sesión aquí</a></p>
+                    </div>
+                </div>
+            </div>
+        
+            <script src="script.js"></script>
+        </main>
+</html>
+<footer>
+    <ul class="footer">
+       <li><img src="Imagenes/instagram.png"/></li>
+       
+       <li><img src="Imagenes/whatsapp.png"/></li>
+       
+       <li><img src="Imagenes/mail.png"/></li>
+
+        
+    </ul>
+
+</footer>
+</body>
+</html>
+
+            

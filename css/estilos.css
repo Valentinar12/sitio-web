@@ -1,0 +1,599 @@
+@charset "utf-8" ;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+    
+  
+*{
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    border: 0;
+ }
+body{
+        background-color: #f0ead2;
+        
+        font-family: 'open sans', sans-serif;
+        min-height: 100vh;
+        
+ }
+ 
+header{
+        padding: 2em;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;     
+        display: contents;   
+}
+
+img{
+        max-width: 100%
+ }
+
+#logo{
+    width: 60%;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+h1, h2, h3 {
+    color: #6c584c;
+}
+h1{
+    font-family: "Merriweather", serif;
+    padding: 0.5em;
+    
+}
+p , a , h2, h3 {
+    font-family: "Open Sans", sans-serif;
+    margin: 1em;
+   
+}
+
+figure {
+  width: 60%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.imagengrande{
+    width: 40%;
+    
+    margin: 1em;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+ul li{
+    padding: 0.5em;
+}
+ul{
+
+    height: auto;
+}
+ul#encontrarcuidador_hogar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    margin: 2em;
+    padding: 2em;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url("../Imagenes/perroenpasto.JPG");
+
+}
+ul#encontrarcuidador_hogar li {
+    background-color: #adc178;
+    padding: .5em;
+    
+}
+ul#encontrarcuidador_hogar  a{
+    color: white;
+}
+    
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+
+    background-color: #adc178;
+}
+.footer li{
+width: 15%;
+}
+
+
+.encontraruncuidador {
+    background-color: #adc178;
+    
+}  
+.encontraruncuidador h2 {
+    color: white;
+}
+.encontrarunhogar {
+    background-color: #adc178;
+}  
+.encontrarunhogar h2{
+    color: white;
+}
+.imagenesmias{
+    width: 75%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+   
+}
+.vision {
+    background-color: #adc178;
+   
+    border-radius: 1em;
+   
+}
+.vision h2{
+    color: white;
+}
+.mision {
+    background-color: #adc178;
+    
+    border-radius: 1em;
+    
+}
+.mision h2{
+    color: white;
+}
+.comoevaluamosalusuario{
+    display: flex;
+    background-color: #adc178;
+    padding: .3em;
+    align-items: start;
+}
+.comoevaluamosalusuario h3{
+    color: white;
+}
+
+    
+
+figure.item {
+    width: 10%;
+}
+picture.perrosrazas {
+    display: flex;
+    justify-content: center;
+}
+.subrayado h3 {
+
+  display: flex;
+    background-color: #adc178;
+    padding: .1em;
+    align-items: start;
+    
+}
+.subrayado a{
+    color: white;}
+.imagenesblog{
+    width: 50%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.imagenesblogalimentacion{
+    width: 40%; 
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.contenedora_huella{
+    display: flex;
+    margin-block: 1em;
+    gap: 1em;
+    margin-inline: .5em;
+    text-align: left;
+    
+}
+.contenedora_huella div{
+    width: 25px;
+}
+.contenedora_huella p{
+    width: 80%;
+    margin: 0;
+}
+.icono_item{
+    display: flex;
+    margin-block: 1em;
+}
+    
+.icono_item div{
+    width: 80px;
+    height: auto;
+    margin-inline: 1em;
+
+
+}
+#centrado figure{
+    align-items: center;
+}
+#seccion_index {
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "art1"
+    "art2"
+    "art3";
+}
+#art1  {
+    align-items: center;
+}
+#art2 {
+    align-items: center;
+}
+#art3 {
+    align-items: center;
+}
+h2 { grid-area: titulo; }
+#art1        {grid-area: art1;}
+#art2       { grid-area: art2; }
+#art3      { grid-area: art3; }
+/* menÃº horizontal */
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: .5em;
+  }
+  
+
+/* ----------
+   encabezado
+   ---------- */
+
+   header {
+    box-shadow: 0 4px 2px hsl(0 0% 0% / 0.25); /* sombra difusa  */
+  
+    /* "pegado" al borde superior de la ventana */
+    position: sticky;
+    /* distancia 0 del borde */
+    top: 0;
+    /* capa superior arriba de casi todo */
+    z-index: 8000;
+  }
+  
+  /* caja que "limita" al logo y al menu */
+  header .contenedora {
+    display: flex; /* caja flexible */
+    /* si los elementos "hijos" no caben en una fila,
+       van a la fila siguiente */
+    flex-wrap: wrap;
+    
+    /* elementos "hijos" separados en la horizontal */
+    justify-content: space-between;
+    
+    /* elementos "hijos" centrados en la vertical */
+    align-items: center;
+  }
+  
+  #logo {
+    display: flex; /* caja flexible */
+    align-items: center; /* hijos centrados en la vertical */
+    /* sale del fondo pero no parece */
+    position: relative;
+    /* capa superior, arriba de todo */
+    z-index: 9999;
+  }
+  
+  /* etiqueta img, pero SÓLO el logo */
+  #logo img {
+      width: 5em;
+      margin: -1em .75em -1em 0;
+    }
+  
+
+
+
+
+
+
+
+
+
+
+#carrusel-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* Para posicionar las flechas */
+}
+
+
+.carrusel {
+    display: flex; /* Usar flexbox para alinear imágenes */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente (en este caso, puede no ser necesario) */
+    position: relative;
+   
+    overflow: hidden;
+}
+
+.imagen {
+ 
+  display: none; /* Ocultamos todas las imágenes inicialmente */
+  width: 50%; /* Mantiene el ancho del contenedor */
+  height: 400px; /* Establece un alto fijo para todas las imágenes */
+  object-fit: cover; /* Ajusta la imagen para cubrir el área sin distorsionar */
+  
+}
+
+.imagen.active {
+  display: block; /* Solo mostramos la imagen activa */
+}
+
+.arrow {
+  background: #adc178;
+  border: none;
+  font-size: 30px; /* Tamaño de la flecha */
+  cursor: pointer;
+  position: absolute; /* Cambiado a absolute para posicionar sobre la imagen */
+  top: 75%; /* Centrar verticalmente */
+  transform: translateY(-50%);
+  color: #fff; /* Color de la flecha */
+  z-index: 1; /* Asegura que las flechas estén sobre la imagen */
+}
+
+#prev {
+  left: 10px; /* Posición de la flecha izquierda */
+}
+
+#next {
+  right: 10px; /* Posición de la flecha derecha */
+}
+form#login-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #adc178;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 1em;
+}
+label {
+    padding-block-end: 1em;
+}
+input#login-email {
+    margin-block-end: 2em;
+    height: 2.5em;
+    margin-inline: 1em;
+}
+input#login-password{
+    margin-block-end: 2em;
+    height: 2.5em;
+    margin-inline: 1em;
+}
+button {
+    width: fit-content;
+    margin-inline: auto;
+    padding: .5em;
+    margin-block: 1em;
+}
+
+/* botón "hamburguesa" */
+.menu-btn {
+    background: hsl(0 0% 100% / 0.25);
+    border-radius: 50%;
+    box-shadow: -5px 5px 5px hsl(180 100% 4% / 0.2);
+    padding: .75rem;
+    width: 3rem;
+    aspect-ratio: 1;
+    cursor: pointer;
+    transition: all 0.3s ease-out; /* anima el "hover" */
+  
+    /* fijo, no "scrolea", no genera scroll */
+    position: fixed;
+    /* emplazamiento 1 renglón del borde superior */
+    top: 1em;
+    /* emplazamiento 1 renglón del borde derecho */
+    right: 1em;
+    /* en capa superior, casi arriba de todo */
+    z-index: 9000;
+  }
+  
+  /* cada barra de la "hamburguesa" */
+  .menu-btn .btn-linea {
+    width: 25px;
+    height: 3px;
+    margin: 4px 0 4px 0;
+    background: hsl(0 0% 90%);
+    transition: all 0.3s ease-out;
+    /* capa superior, pero no parece */
+    position: relative;
+    /* capa superior, casi arriba de todo */
+    z-index: 9000;
+  }
+  
+  /* cada barra, transformacion para formar la "X" */
+  .menuVisible .menu-btn .btn-linea {
+    transform: rotate(180deg);
+  }
+  /* Las tres barras para formar la "X" */
+  .menuVisible .menu-btn .btn-linea:nth-child(1) {
+    transform: rotate(45deg) translate(4px, 6px);
+  }
+  .menuVisible .menu-btn .btn-linea:nth-child(2) {
+    opacity: 0;
+  }
+  .menuVisible .menu-btn .btn-linea:nth-child(3) {
+    transform: rotate(-45deg) translate(4px, -6px);
+  }
+  
+  /* menú propiamente dicho */
+  nav.nav-menu ul {
+    background-color: hsl(155, 92%, 36%);
+    display: grid;
+    place-items: center;
+    place-content: center;
+  
+    /* sale del fondo, queda fijo */
+    position: fixed;
+    /* emplazamiento,
+    estirado en toda la ventana */
+    inset: 0;
+    /* capa superior, arriba de casi todo */
+    z-index: 8000;
+    /* escondido "a la derecha" */
+    translate: 100%;
+    
+    transition: all .6s ease; /* anima cuando "nav" NO tiene la clase "menuVisible" */
+  }
+  
+  /* el menu cuando "nav" tiene la clase "menuVisible" */
+  .menuVisible ul {
+    background-color: hsl(155, 92%, 36%);
+    transition: all .4s ease; /* anima cuando "nav" tiene la clase "menuVisible" */
+    
+    /* se muestra */
+    translate: 0;
+  }
+  
+  /* cada vínculo del menu */
+  nav.nav-menu ul li a {
+    border-bottom: solid 3px hsl(0 0% 100% / 0.1);
+    color: white;
+    display: block;
+    font-size: 1.5rem;
+    margin-block-end: .5rem;
+    width: min(70vw, 20rem); /* el valor menor entre el 40% del ancho de la ventana del navegador y 240px */
+    text-align: center;
+    
+    padding: .5rem;
+    text-decoration: none;
+  }
+  
+  nav.nav-menu ul li a:hover {
+    border-bottom: solid 3px hsl(0 0% 100% / 0.5);
+    transition: all .3s;
+  }
+  
+  
+@media (min-width: 40em) {
+   #seccion_index article {
+    flex-direction: row;
+   }
+   
+   .footer{
+    gap: 2em;
+   }
+   .footer li{
+    width: 10%;
+    }
+    
+    #seccion_blog  {
+      display: grid;
+      grid-template-areas: 
+      
+      "art1 art2"
+      "art3 art4";
+      align-items: end;
+    }
+    #seccion_index {
+        display: flex; /* Utiliza flexbox para alinear artículos */
+        flex-direction: column; /* Coloca los artículos en columna */
+        align-items: center; /* Centra los artículos */
+        padding-left: 20px; /* Ajusta el valor según lo necesites */
+    }
+    
+    
+    article {
+        display: flex; /* Utiliza flexbox dentro de cada artículo */
+        align-items: flex-start; /* Alinea la imagen y el texto al principio */
+        margin-bottom: 20px; /* Espacio entre artículos */
+        width: 100%; /* O ajusta según sea necesario */
+        max-width: 600px; /* Máximo ancho de cada artículo */
+    }
+    
+    figure {
+        margin: 0; /* Elimina el margen por defecto */
+        
+    }
+    
+    figure img {
+        width: 130px; /* Ajusta el ancho de las imágenes */
+      
+        object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
+        border-radius: 5px; /* Opcional: agrega esquinas redondeadas */
+    }
+    .arrow {
+        background: #adc178;
+        border: none;
+        font-size: 50px; /* Tamaño de la flecha */
+        cursor: pointer;
+        position: absolute; /* Cambiado a absolute para posicionar sobre la imagen */
+        top: 60%; /* Centrar verticalmente */
+        transform: translateY(-50%);
+        color: #fff; /* Color de la flecha */
+        z-index: 1; /* Asegura que las flechas estén sobre la imagen */
+      }
+}
+    
+
+    @media (min-width: 60em) {
+        #seccion_index {
+            display: grid;
+            grid-template-areas: 
+            "titulo titulo titulo"
+            "art1 art2 art3";
+          
+        }
+        #seccion_index article {
+            
+            flex-direction: column;
+           }
+           #seccion_blog  {
+            display: grid;
+            grid-template-areas: 
+            
+            "art1 art2  art3 art4";
+           }
+           .arrow {
+            background: #adc178;
+            border: none;
+            font-size: 50px; /* Tamaño de la flecha */
+            cursor: pointer;
+            position: absolute; /* Cambiado a absolute para posicionar sobre la imagen */
+            top: 90%; /* Centrar verticalmente */
+            transform: translateY(-50%);
+            color: #fff; /* Color de la flecha */
+            z-index: 1; /* Asegura que las flechas estén sobre la imagen */
+          }
+        
+    
+       
+        .footer{
+            gap: 4em;
+           }
+        .footer li{
+            width: 5%;
+            }
+        }
+        nav ul{
+          /* menÃº vertical */
+          flex-direction: column;
+        }
+        
+      
